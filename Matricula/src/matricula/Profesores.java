@@ -4,16 +4,15 @@ package matricula;
 import java.util.Objects;
 
 
-public class Profesores {
+public class Profesores extends Persona {
     
-    private String nombre;
-    private String apellido;
+
     private String facultad;
     private String materiaP;
 
     public Profesores(String nombre, String apellido, String facultad, String materiaP) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+
+        super(nombre,apellido);
         this.facultad = facultad;
         this.materiaP = materiaP;
     }
@@ -24,22 +23,6 @@ public class Profesores {
 
     public void setMateriaP(String materia) {
         this.materiaP = materia;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
     }
 
     public String getFacultad() {
